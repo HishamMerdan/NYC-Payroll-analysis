@@ -1,0 +1,30 @@
+{
+	"name": "ds_sqldb_emp_master",
+	"properties": {
+		"linkedServiceName": {
+			"referenceName": "ls_sqldb_nyc_payroll",
+			"type": "LinkedServiceReference"
+		},
+		"annotations": [],
+		"type": "AzureSqlTable",
+		"schema": [
+			{
+				"name": "EmployeeID",
+				"type": "varchar"
+			},
+			{
+				"name": "LastName",
+				"type": "varchar"
+			},
+			{
+				"name": "FirstName",
+				"type": "varchar"
+			}
+		],
+		"typeProperties": {
+			"schema": "dbo",
+			"table": "EmpMaster"
+		}
+	},
+	"type": "Microsoft.DataFactory/factories/datasets"
+}

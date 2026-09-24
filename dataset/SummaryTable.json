@@ -1,0 +1,25 @@
+{
+	"name": "SummaryTable",
+	"properties": {
+		"linkedServiceName": {
+			"referenceName": "ls_adls_nyc_payroll",
+			"type": "LinkedServiceReference"
+		},
+		"annotations": [],
+		"type": "DelimitedText",
+		"typeProperties": {
+			"location": {
+				"type": "AzureBlobFSLocation",
+				"fileName": "Summary.csv",
+				"folderPath": "dirstaging",
+				"fileSystem": "adlsnycpayroll-hisham-lastintial"
+			},
+			"columnDelimiter": ",",
+			"escapeChar": "\\",
+			"firstRowAsHeader": true,
+			"quoteChar": "\""
+		},
+		"schema": []
+	},
+	"type": "Microsoft.DataFactory/factories/datasets"
+}

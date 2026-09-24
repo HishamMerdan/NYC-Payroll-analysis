@@ -1,0 +1,15 @@
+{
+	"name": "adf-udacity-dev",
+	"properties": {
+		"trustModeClaimForMi": {
+			"value": "Disabled",
+			"editable": true
+		}
+	},
+	"location": "westeurope",
+	"identity": {
+		"type": "SystemAssigned",
+		"principalId": "2bed6e62-f8e4-4377-a62c-701dd91e302e",
+		"tenantId": "8df45f77-9c2a-4ceb-955f-46a523ae2e01"
+	}
+}
